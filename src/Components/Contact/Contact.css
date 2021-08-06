@@ -1,0 +1,50 @@
+.contact_section{
+}
+
+.contact_icon i {
+	font-size: 33px;
+	float: left;
+	border: 2px dashed #ddd;
+	margin-left: ;
+	padding: 0px 7px;
+	color: blue;
+}
+.contact_info {
+	margin-left: 19%;
+}
+.contact_info  h6{
+font-size:var(--font-sm)
+
+}
+.contact_info  h5{
+    font-size:var(--font-md)
+    
+    }
+
+ .contact_info_main{
+     margin-top: 15%;
+ }   
+
+
+
+ /* input area  */
+ .input_sec input {
+	margin-top: 20px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	border-radius: 0px;
+}
+.input_sec input:hover {
+	margin-top: 20px;
+	border: none;
+	border-bottom: 3px solid #ddd;
+	border-radius: 0px;
+}
+.input_btn {
+	text-align: right;
+	margin-top: 20px;
+}
+
+.row.input_row {
+	margin-top: 70px;
+}

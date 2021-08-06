@@ -1,0 +1,30 @@
+.service_icon img {
+	max-width: 75%;
+}
+.service_box {
+	/* box-shadow: var(--shadow); */
+	padding: 10px 23px;
+	border-radius: 5px;
+	text-align: center;
+	width: 85%;
+	margin-left: 15px;
+    transition:.3s;
+	margin-top: 18%;
+    cursor: pointer;
+}
+.service_box:hover{
+	box-shadow: var(--shadow);
+}
+
+.service_contect h3 {
+    font-size: 30px;
+    color: #000;
+  }
+  .service_contect {
+    margin-top: 20px;
+  }
+  .service_contect a {
+	margin-left: 65%;
+	font-size: 15px;
+}
+

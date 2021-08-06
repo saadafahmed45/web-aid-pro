@@ -1,0 +1,37 @@
+.header_section{
+    background:var(--bg-color);
+    padding:70px 0px;
+
+}
+.header_content {
+	text-align: left;
+    margin-top: 2rem;
+}
+.header_content h3{
+font-size: var(--font-md);
+}
+.header_content span{
+ color: var( --tomato-color);
+ font-weight:800;
+}
+.header_content p{
+    font-size: var(--font-sm);
+    margin-top: 2rem;
+    width: 90%;
+}
+
+.header_content h1{
+    margin-top:1rem;
+    font-size:var(--font-lg);
+    width: 80%;
+}
+
+.header_img img{
+    width: 100%;
+
+}
+
+.dark-mode {
+    background-color: rgb(14, 12, 36);
+    color: white;
+  }

@@ -1,0 +1,57 @@
+
+.team_box img {
+  width: 85%;
+  /* max-width: 80%; */
+
+}
+.team_box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  margin: auto;
+  
+  text-align: center;
+  padding: 8px;
+  margin-top: 10%;
+  border-radius: 5px;
+}
+.team_box h3 {
+  font-size: 25px;
+  margin-top: 10px;
+}
+.team_box h5 {
+  margin-top: 10px;
+  opacity: 0.8;
+  font-size: 17px;
+}
+
+.teams_social-link a {
+  font-size: 22px;
+  margin-left: 8px;
+}
+
+.team_facebook {
+  color: var(--font-color);
+}
+
+.team_twitter {
+  color: var(--font-color);
+}
+
+.team_linkedin {
+  color: var(--font-color);
+}
+
+.team_facebook:hover {
+  color: #2f5099;
+  opacity: 0.9;
+}
+
+.team_twitter :hover {
+  color: #221e0d;
+  opacity: 0.9;
+}
+
+.team_linkedin :hover {
+  color: #007bb5;
+  opacity: 0.9;
+}

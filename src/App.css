@@ -1,38 +1,134 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+:root {
+  /* color */
+ --bg-light:#fff;
+ --sec-color:#1145e0;
+ --tomato-color:#1145e0;
+ --font-color: #060520 ;
+
+ /* font size */
+ --font-lg:50px;
+ --font-md:30px;
+ --font-sm:17px;
+
+ /* font Bold */
+ --bold-lg:600;
+ --bold-md:500;
+ --bold-sm:300;
+
+/* opacity */
+ --op-sm:.8;
+ --op-md:.5;
+
+/* shadow */
+--shadow: 0px 6px 13px -7px #000000;
+ 
+}
+
+@media screen and (max-width: 780px) {
+
+  :root {
+   
+  
+   /* font size */
+   --font-lg:35px;
+   --font-md:22px;
+   --font-sm:16px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+section{
+  padding: 100px 0px;
+  text-align: left;
+}
+.section_header h1::after {
+  content: "";
+  height: 3px;
+  width: 10%;
+  background: var(--tomato-color);
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  transition: 0.2s;
+  
+}
+.section_header{
+  text-align: center;
+}
+
+.section_header h1 {
+  font-size: var(--font-lg);
+  font-weight: var(--bold-lg);
+}
+
+
+/* stick icon  */
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 19px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.twitter {
+  background: #55ACEE;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.home_spnner{
+  margin-top: 20%;
+}
+
+@media screen and (max-width: 780px) {
+  .home_spnner{
+      margin-top: 60%;
+  
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
