@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.css";
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import { BiAlignRight } from "react-icons/bi";
 import logo from "../images/logo1.png";
 import { Link, NavLink } from "react-router-dom";
+import { UserContext } from "../../App";
 // import { HashLink as NavLink } from "react-router-hash-link";
 
 const Navbar = () => {
@@ -19,7 +20,7 @@ const Navbar = () => {
 
   const [navbar, setNavbar] = useState(false);
   const changeBackground = () => {
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     if (window.scrollY >= 80) {
       setNavbar(true);
     } else {
@@ -27,6 +28,9 @@ const Navbar = () => {
     }
   };
   window.addEventListener("scroll", changeBackground);
+
+
+  const [loggedinUser,setLoggedinUser]=useContext(UserContext)
 
   return (
     <div>
@@ -55,24 +59,33 @@ const Navbar = () => {
           </li>
 
           <li>
-            <NavLink to="/service" activeClassName="myActive">
-              Services
-            </NavLink>
-          </li>
-          <li>
             <NavLink to="/about" activeClassName="myActive">
               About
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/service" activeClassName="myActive">
+              Services
+            </NavLink>
+          </li>
+         
           <li>
             <NavLink to="/team" activeClassName="myActive">
               Team
             </NavLink>
           </li>
           <li>
+            <NavLink to="/pricing" activeClassName="myActive">
+              pricing
+            </NavLink>
+          </li>
+          <li>
             <NavLink to="/contact" activeClassName="myActive">
               Contact
             </NavLink>
+          </li>
+          <li>
+       <h5><b>{loggedinUser.name}</b></h5>
           </li>
           {/* 
           <li className="signup">

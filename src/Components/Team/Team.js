@@ -12,19 +12,19 @@ const Team = () => {
       name: "Fahim Hasan",
       photo: team1,
       position: "CEO Of Web Aid Pro",
-      facebook:'https://www.facebook.com/profile.php?id=100009618333588',
+      facebook: "https://www.facebook.com/profile.php?id=100009618333588",
     },
     {
       name: "Saad-Af Ahmed",
       photo: team2,
       position: "Full Stack Developer",
-      facebook:'https://www.facebook.com/saadafhmed.officials'
+      facebook: "https://www.facebook.com/saadafhmed.officials",
     },
     {
       name: "Yousuf Ahmed",
       photo: team3,
       position: "WordPress Theme Developer",
-      facebook:'https://www.facebook.com/yousuf.islam.me'
+      facebook: "https://www.facebook.com/yousuf.islam.me",
     },
   ];
 
@@ -33,7 +33,7 @@ const Team = () => {
       <div className="container">
         <div className="section_header text-center">
           <h1>Meet The Team</h1>
-          {/* <h2>{teamsMembers.length}</h2> */}
+          <h5><b>Meet Our Expert</b></h5>
         </div>
         <div className="row">
           {teamsMembers.map((team) => (

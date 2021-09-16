@@ -1,0 +1,44 @@
+.footer_section {
+  padding-top: 100px;
+  color: #fff !important;
+  background: rgb(41, 40, 40);
+  text-align: left;
+}
+
+.footer_section h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.footer_section h6 {
+  font-size: 16px;
+}
+.imp_link ul {
+  margin: 0;
+  padding: 0;
+}
+
+.imp_link ul li {
+  list-style: none;
+}
+
+.imp_link li a {
+  text-decoration: none;
+  color: #fff;
+  text-align: left;
+}
+
+.imp_link li a:hover {
+  text-decoration: underline;
+  color: rgb(48, 68, 250);
+}
+
+.copyright {
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 780px) {
+  .footer_section {
+    text-align: center;
+  }
+}

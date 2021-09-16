@@ -33,17 +33,17 @@ const Service = () => {
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus magnam exercitationem quae?",
     },
     {
-        name: "Security Safe",
-        img: service5,
-        content:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus magnam exercitationem quae?",
-      },
-      {
-        name: "Bug Fixing",
-        img: service6,
-        content:
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus magnam exercitationem quae?",
-      },
+      name: "Security Safe",
+      img: service5,
+      content:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus magnam exercitationem quae?",
+    },
+    {
+      name: "Bug Fixing",
+      img: service6,
+      content:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus magnam exercitationem quae?",
+    },
   ];
 
   return (
@@ -51,6 +51,7 @@ const Service = () => {
       <div className="container">
         <div className="section_header">
           <h1>Our Services</h1>
+          <h5><b>We Provide Digital Services</b></h5>
         </div>
         <div className="row">
           {serviceItem.map((service) => (

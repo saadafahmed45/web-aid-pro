@@ -32,6 +32,7 @@
 
 /* shadow */
 --shadow: 0px 6px 13px -7px #000000;
+--shadow-sm: 0px 2px 5px -4px #000000;
  
 }
 
@@ -131,4 +132,8 @@ section{
   
   }
 
+}
+
+button.styles_scroll-to-top__2A70v svg {
+  width: 70%;
 }
